@@ -1,0 +1,12 @@
+﻿<div>
+	<h1>@ViewData["TitrePage"]</h1>
+
+	<p>Année la plus encienne : @ViewBag.AnneeMin</p>
+	<p>Année la plus récente : @ViewBag.AnneeMax</p>
+
+	@if(TempData["Message"] != null)
+	{
+		<p class="alert alert-info">@TempData["Message"]</p>
+	}
+	<a class="Retour à la liste" asp-action="Index">Retour à la liste</a>
+</div>

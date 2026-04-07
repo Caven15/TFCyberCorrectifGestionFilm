@@ -1,0 +1,13 @@
+﻿@model TFCyberCorrectifGestionFilm.Models.Film
+
+<div>
+	<h1>Confirmer la suppression</h1>
+
+	<p>Voulez vous supprimer "@Model.Titre" ?</p>
+
+	<form asp-action="SupprimerConfirm" method="post">
+		<input type="hidden" asp-for="Id"/>
+		<button class="btn btn-danger" type="submit">Oui, confirmer</button>
+		<a class="btn btn-secondary" asp-action="Index">Annuler</a>
+	</form>
+</div>

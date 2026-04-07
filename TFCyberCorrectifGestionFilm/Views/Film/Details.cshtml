@@ -1,0 +1,12 @@
+﻿@model TFCyberCorrectifGestionFilm.Models.Film
+
+<div>
+	<h1>@ViewData["TitrePage"]</h1>
+
+	<p><strong>Id :</strong> @Model.Id</p>
+	<p><strong>Titre :</strong> @Model.Titre</p>
+	<p><strong>Genre :</strong> @Model.Genre</p>
+	<p><strong>Année :</strong> @Model.Annee</p>
+
+	<a class="btn btn-primary" asp-action="Index">Retour à la liste</a>
+</div>
